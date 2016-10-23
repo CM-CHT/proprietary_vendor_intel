@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Thermal Management Configuration File -->
+<!--  Intel Corporation 2011-2014  -->
+<thermalconfig>
+	<!-- Config xml file version should be in sync with iTUX version number-->
+	<ConfigFileVersion>4.0</ConfigFileVersion>
+	<!--Platform Parameters-->
+	<PlatformInfo>
+		<PlatformName>cht</PlatformName>
+	<!--namely NORMAL, WARNING, ALERT, and CRITICAL.In the increasing order of
+	thermal severity standard sensor devices register as
+	/sys/class/thermal/thermal_zoneX. Herein referred as 'Path Enumerated
+	at Runtime by Framework in Kernel Thermal' or PERFKT-->
+	</PlatformInfo>
+	<!-- sensor information -->
+	<!-- name matching 'type' file in below sensor path sysfs path for
+	InputTemp & other files. "auto" implies look in PERFKT path
+	InputTemp: sysfs Interface names to read Temperature in milli degree celsius
+	for PERFKT sensors this file is called 'temp'. temp2_threshold2: sysfs Interface
+	names to set lower threshold Temperature in milli degree celsius for PERFKT
+	sensors this file is called 'trip_point_1_temp'. For PERFKT sensors set
+	"auto". temp2_threshold1: sysfs Interface names to set lower threshold Temperature in
+	milli degree celsius for PERFKT sensors this file is called 'trip_point_0_temp'.
+	for PERFKT sensors set "auto" UEventDevPath for event observer to listen.
+	"auto" for PERFKT sensors-->
+
+	<Sensor>
+		<SensorName>STR0</SensorName>
+<!--
+		<SensorPath>auto</SensorPath>
+		<InputTemp>temp</InputTemp>
+		<HighTemp>auto</HighTemp>
+		<LowTemp>auto</LowTemp>
+-->
+	</Sensor>
+
+	<Sensor>
+		<SensorName>STR3</SensorName>
+<!--
+		<SensorPath>auto</SensorPath>
+		<InputTemp>temp</InputTemp>
+		<HighTemp>auto</HighTemp>
+		<LowTemp>auto</LowTemp>
+-->
+	</Sensor>
+
+	<Sensor>
+		<SensorName>dollar_cove_battery</SensorName>
+	<!--
+		dollar_cove_battery sensor will only be used for XPOWER PMIC Platforms
+	-->
+	</Sensor>
+
+	<Sensor>
+		<SensorName>intel_fuel_gauge</SensorName>
+	<!--
+		intel_fuel_gauge sensor will only be used for TI PMIC Platforms
+	-->
+	</Sensor>
+
+	<Sensor>
+		<SensorName>Coretemp</SensorName>
+		<SensorPath>/sys/devices/platform/coretemp.0/</SensorPath>
+		<InputTemp>temp2_input</InputTemp>
+		<HighTemp>none</HighTemp>
+		<LowTemp>none</LowTemp>
+	</Sensor>
+
+<Profile>
+	<Name>Default</Name>
+	<Zone>
+		<ZoneID>1</ZoneID>
+		<ZoneName>STR0</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<MovingAverageWindow>
+			<WindowNormal>120000</WindowNormal>
+			<WindowWarning>120000</WindowWarning>
+			<WindowAlert>120000</WindowAlert>
+		</MovingAverageWindow>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>70000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>75000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>80000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>STR0</SensorName>
+		</SensorAttrib>
+		<!--SensorAttrib>
+			<SensorName>SYSTHERM1</SensorName>
+			<Weight>680</Weight>
+		</SensorAttrib>
+		<Offset>8400</Offset-->
+	</Zone>
+
+	<Zone>
+		<ZoneID>2</ZoneID>
+		<ZoneName>Battery</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>54000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>dollar_cove_battery</SensorName>
+		</SensorAttrib>
+	</Zone>
+	<Zone>
+		<ZoneID>3</ZoneID>
+		<ZoneName>SoC</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>84000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>87000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>89000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>Coretemp</SensorName>
+		</SensorAttrib>
+	</Zone>
+	<Zone>
+		<ZoneID>4</ZoneID>
+		<ZoneName>Battery_TI_PMIC</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>54000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>intel_fuel_gauge</SensorName>
+		</SensorAttrib>
+	</Zone>
+</Profile>
+
+<Profile>
+	<Name>BatterySaver</Name>
+	<Zone>
+		<ZoneID>1</ZoneID>
+		<ZoneName>STR0</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<MovingAverageWindow>
+			<WindowNormal>120000</WindowNormal>
+			<WindowWarning>120000</WindowWarning>
+			<WindowAlert>120000</WindowAlert>
+		</MovingAverageWindow>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>70000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>75000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>80000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>STR0</SensorName>
+		</SensorAttrib>
+		<!--SensorAttrib>
+			<SensorName>SYSTHERM1</SensorName>
+			<Weight>680</Weight>
+		</SensorAttrib>
+		<Offset>8400</Offset-->
+	</Zone>
+
+	<Zone>
+		<ZoneID>2</ZoneID>
+		<ZoneName>Battery</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>54000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>dollar_cove_battery</SensorName>
+		</SensorAttrib>
+	</Zone>
+	<Zone>
+		<ZoneID>3</ZoneID>
+		<ZoneName>SoC</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>84000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>87000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>89000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>Coretemp</SensorName>
+		</SensorAttrib>
+	</Zone>
+	<Zone>
+		<ZoneID>4</ZoneID>
+		<ZoneName>Battery_TI_PMIC</ZoneName>
+		<ZoneLogic>Raw</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<DebounceInterval>0</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>54000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>60000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>intel_fuel_gauge</SensorName>
+		</SensorAttrib>
+	</Zone>
+</Profile>
+
+</thermalconfig>
