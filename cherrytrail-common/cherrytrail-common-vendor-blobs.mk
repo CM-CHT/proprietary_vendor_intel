@@ -262,7 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libmfxhw32.so:system/lib/libmfxhw32.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmfxsw32.so:system/lib/libmfxsw32.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmdp_omx_core.so:system/lib/libmdp_omx_core.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
