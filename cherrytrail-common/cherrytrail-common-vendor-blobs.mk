@@ -295,8 +295,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/etc/thermal_throttle_config.xml:system/etc/thermal_throttle_config.xml \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/power.gmin.so:system/vendor/lib/hw/power.gmin.so \
-    vendor/intel/cherrytrail-common/proprietary/bin/pstore-clean:system/bin/pstore-clean \
-    vendor/intel/cherrytrail-common/proprietary/vendor/etc/pstore-clean.conf:system/vendor/etc/pstore-clean.conf \
     vendor/intel/cherrytrail-common/proprietary/bin/sl_si_service:system/bin/sl_si_service \
     vendor/intel/cherrytrail-common/proprietary/lib/libproxyta.so:system/lib/libproxyta.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsgx_urts.so:system/lib/libsgx_urts.so \
