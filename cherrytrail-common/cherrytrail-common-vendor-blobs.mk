@@ -287,9 +287,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_common.so:system/lib/libwrs_omxil_common.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_core_pvwrapped.so:system/lib/libwrs_omxil_core_pvwrapped.so \
     vendor/intel/cherrytrail-common/proprietary/bin/bcu_cpufreqrel:system/bin/bcu_cpufreqrel \
-    vendor/intel/cherrytrail-common/proprietary/bin/thermal-daemon:system/bin/thermal-daemon \
-    vendor/intel/cherrytrail-common/proprietary/etc/thermal-daemon/thermal-conf.xml:system/etc/thermal-daemon/thermal-conf.xml \
-    vendor/intel/cherrytrail-common/proprietary/etc/thermal-daemon/thermal-cpu-cdev-order.xml:system/etc/thermal-daemon/thermal-cpu-cdev-order.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/thermal_sensor_config.xml:system/etc/thermal_sensor_config.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/thermal_throttle_config.xml:system/etc/thermal_throttle_config.xml \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
