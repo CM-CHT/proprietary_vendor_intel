@@ -254,6 +254,14 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libthermalJNI.so:system/lib/libthermalJNI.so \
     vendor/intel/cherrytrail-common/proprietary/etc/video_isv_profile.xml:system/etc/video_isv_profile.xml \
     vendor/intel/cherrytrail-common/proprietary/lib/libisv_omx_core.so:system/lib/libisv_omx_core.so \
+    vendor/intel/cherrytrail-common/proprietary/etc/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
+    vendor/intel/cherrytrail-common/proprietary/lib/libgabi++-mfx.so:system/lib/libgabi++-mfx.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libmfx_omx_components_hw.so:system/lib/libmfx_omx_components_hw.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libmfx_omx_components_sw.so:system/lib/libmfx_omx_components_sw.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libmfx_omx_core.so:system/lib/libmfx_omx_core.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libmfxhw32.so:system/lib/libmfxhw32.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libmfxsw32.so:system/lib/libmfxsw32.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmdp_omx_core.so:system/lib/libmdp_omx_core.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \

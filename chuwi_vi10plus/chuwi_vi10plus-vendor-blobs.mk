@@ -127,14 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libsvml.so:system/lib/libsvml.so \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libva.so:system/lib/libva.so \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libva-android.so:system/lib/libva-android.so \
-    vendor/intel/chuwi_vi10plus/proprietary/etc/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libgabi++-mfx.so:system/lib/libgabi++-mfx.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libmfx_omx_components_hw.so:system/lib/libmfx_omx_components_hw.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libmfx_omx_components_sw.so:system/lib/libmfx_omx_components_sw.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libmfx_omx_core.so:system/lib/libmfx_omx_core.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libmfxhw32.so:system/lib/libmfxhw32.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libmfxsw32.so:system/lib/libmfxsw32.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
     vendor/intel/chuwi_vi10plus/proprietary/bin/sensorhubd:system/bin/sensorhubd \
     vendor/intel/chuwi_vi10plus/proprietary/etc/sensor_hal_config_default.xml:system/etc/sensor_hal_config_default.xml \
     vendor/intel/chuwi_vi10plus/proprietary/lib/hw/sensors.gmin.so:system/lib/hw/sensors.gmin.so \
