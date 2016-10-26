@@ -140,7 +140,4 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cube_iwork8ultimate/proprietary/lib/libaware_client.so:system/lib/libaware_client.so \
     vendor/intel/cube_iwork8ultimate/proprietary/lib/libcontextarbitor.so:system/lib/libcontextarbitor.so \
     vendor/intel/cube_iwork8ultimate/proprietary/lib/libgesture.so:system/lib/libgesture.so \
-    vendor/intel/cube_iwork8ultimate/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
-    vendor/intel/cube_iwork8ultimate/proprietary/bin/hostapd:system/bin/hostapd \
-    vendor/intel/cube_iwork8ultimate/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-    vendor/intel/cube_iwork8ultimate/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so
+    vendor/intel/cube_iwork8ultimate/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so
