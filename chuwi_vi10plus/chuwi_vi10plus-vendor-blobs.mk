@@ -142,7 +142,4 @@ PRODUCT_COPY_FILES += \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libaware_client.so:system/lib/libaware_client.so \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libcontextarbitor.so:system/lib/libcontextarbitor.so \
     vendor/intel/chuwi_vi10plus/proprietary/lib/libgesture.so:system/lib/libgesture.so \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
-    vendor/intel/chuwi_vi10plus/proprietary/bin/hostapd:system/bin/hostapd \
-    vendor/intel/chuwi_vi10plus/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-    vendor/intel/chuwi_vi10plus/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so
+    vendor/intel/chuwi_vi10plus/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so
