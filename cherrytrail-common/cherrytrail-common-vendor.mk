@@ -16,11 +16,8 @@
 
 PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/bin/bcu_cpufreqrel:system/bin/bcu_cpufreqrel \
-    vendor/intel/cherrytrail-common/proprietary/bin/coreu:system/bin/coreu \
-    vendor/intel/cherrytrail-common/proprietary/bin/hdcpd:system/bin/hdcpd \
     vendor/intel/cherrytrail-common/proprietary/bin/houdini:system/bin/houdini \
     vendor/intel/cherrytrail-common/proprietary/bin/keymaster_meid:system/bin/keymaster_meid \
-    vendor/intel/cherrytrail-common/proprietary/bin/msync:system/bin/msync \
     vendor/intel/cherrytrail-common/proprietary/bin/otpserver:system/bin/otpserver \
     vendor/intel/cherrytrail-common/proprietary/bin/sensorhubd:system/bin/sensorhubd \
     vendor/intel/cherrytrail-common/proprietary/bin/sl_si_service:system/bin/sl_si_service \
@@ -30,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/bt/rtl8723b_config:system/etc/firmware/bt/rtl8723b_config \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/dfw_sst.bin:system/etc/firmware/dfw_sst.bin \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/fw_sst_22a8.bin:system/etc/firmware/fw_sst_22a8.bin \
-    vendor/intel/cherrytrail-common/proprietary/etc/firmware/i915/huc_gen8.bin:system/etc/firmware/i915/huc_gen8.bin \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/shisp_2401a0_v21.bin:system/etc/firmware/shisp_2401a0_v21.bin \
     vendor/intel/cherrytrail-common/proprietary/etc/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
     vendor/intel/cherrytrail-common/proprietary/etc/parameter-framework/RouteParameterFramework.xml:system/etc/parameter-framework/RouteParameterFramework.xml \
@@ -236,26 +232,17 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libutils.so:system/lib/arm/nb/libutils.so \
     vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libz.so:system/lib/arm/nb/libz.so \
     vendor/intel/cherrytrail-common/proprietary/lib/audio.routemanager.so:system/lib/audio.routemanager.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/egl/libGLES_intel8.so:system/lib/egl/libGLES_intel8.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.codec_offload.cherrytrail.so:system/lib/hw/audio.codec_offload.cherrytrail.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.hdmi.gmin.so:system/lib/hw/audio.hdmi.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.primary.gmin.so:system/lib/hw/audio.primary.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.r_submix.cherrytrail.so:system/lib/hw/audio.r_submix.cherrytrail.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/hw/gralloc.gmin.so:system/lib/hw/gralloc.gmin.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/hw/hwcomposer.gmin.so:system/lib/hw/hwcomposer.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/keystore.gmin.so:system/lib/hw/keystore.gmin.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/i965_drv_video.so:system/lib/i965_drv_video.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/igdclbif.bin:system/lib/igdclbif.bin \
-    vendor/intel/cherrytrail-common/proprietary/lib/igfxcmjit32.so:system/lib/igfxcmjit32.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/igfxcmrt32.so:system/lib/igfxcmrt32.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/hw/memtrack.gmin.so:system/lib/hw/memtrack.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libakmd09911.so:system/lib/libakmd09911.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libaudioresample.so:system/lib/libaudioresample.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libaware_client.so:system/lib/libaware_client.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libcilkrts.so:system/lib/libcilkrts.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libcontextarbitor.so:system/lib/libcontextarbitor.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libcoreuclient.so:system/lib/libcoreuclient.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libcoreuinterface.so:system/lib/libcoreuinterface.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libcoreuservice.so:system/lib/libcoreuservice.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libdrm_intel.so:system/lib/libdrm_intel.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libdrm.so:system/lib/libdrm.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libevent-listener.so:system/lib/libevent-listener.so \
@@ -263,11 +250,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libfs-subsystem.so:system/lib/libfs-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgabi++-mfx.so:system/lib/libgabi++-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgesture.so:system/lib/libgesture.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libgrallocclient.so:system/lib/libgrallocclient.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libgrallocgmm.so:system/lib/libgrallocgmm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libgsmgr.so:system/lib/libgsmgr.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libhoudini.so:system/lib/libhoudini.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libhwcservice.so:system/lib/libhwcservice.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libhwcwidi.so:system/lib/libhwcwidi.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_aiq.so:system/lib/libia_aiq.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_cmc_parser.so:system/lib/libia_cmc_parser.so \
@@ -280,10 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_log.so:system/lib/libia_log.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_mkn.so:system/lib/libia_mkn.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_nvm.so:system/lib/libia_nvm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libigdbcl.so:system/lib/libigdbcl.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libigdlbva.so:system/lib/libigdlbva.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libigdrsmlc.so:system/lib/libigdrsmlc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libigdusc.so:system/lib/libigdusc.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libihamanagerjni.so:system/lib/libihamanagerjni.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libiha.so:system/lib/libiha.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libimc-subsystem.so:system/lib/libimc-subsystem.so \
@@ -294,9 +273,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libintlc.so:system/lib/libintlc.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libirng.so:system/lib/libirng.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libisv_omx_core.so:system/lib/libisv_omx_core.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libivp.so:system/lib/libivp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmdp_omx_core.so:system/lib/libmdp_omx_core.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libmd.so:system/lib/libmd.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmeimm.so:system/lib/libmeimm.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmei.so:system/lib/libmei.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmfxhw32.so:system/lib/libmfxhw32.so \
@@ -307,17 +284,13 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libmixvbp_mpeg4.so:system/lib/libmixvbp_mpeg4.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmixvbp.so:system/lib/libmixvbp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmodem-audio-collection.so:system/lib/libmodem-audio-collection.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libmultidisplay.so:system/lib/libmultidisplay.so \
     vendor/intel/cherrytrail-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoDecoderH263.so:system/lib/libOMXVideoDecoderH263.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoDecoderMPEG4.so:system/lib/libOMXVideoDecoderMPEG4.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoEncoderH263.so:system/lib/libOMXVideoEncoderH263.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoEncoderMPEG4.so:system/lib/libOMXVideoEncoderMPEG4.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libparameter.so:system/lib/libparameter.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libpavpdll.so:system/lib/libpavpdll.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libpavp.so:system/lib/libpavp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libpciaccess.so:system/lib/libpciaccess.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libpcp.so:system/lib/libpcp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libpower-subsystem.so:system/lib/libpower-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libproperty.so:system/lib/libproperty.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libproperty-subsystem.so:system/lib/libproperty-subsystem.so \
@@ -325,14 +298,11 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libremoteparameter-subsystem.so:system/lib/libremoteparameter-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libremote-processor.so:system/lib/libremote-processor.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libroute-subsystem.so:system/lib/libroute-subsystem.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libRSDriver_intel.so:system/lib/libRSDriver_intel.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libRSDriverUmd_intel.so:system/lib/libRSDriverUmd_intel.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsecmem.so:system/lib/libsecmem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsecurityclient.so:system/lib/libsecurityclient.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsepipt.so:system/lib/libsepipt.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsgx_urts.so:system/lib/libsgx_urts.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libskuwa.so:system/lib/libskuwa.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsl_pm_interface.so:system/lib/libsl_pm_interface.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsl.so:system/lib/libsl.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
@@ -353,7 +323,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa-subsystem.so:system/lib/libtinyalsa-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinycompress.so:system/lib/libtinycompress.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtxei.so:system/lib/libtxei.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libuevent.so:system/lib/libuevent.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libusl.so:system/lib/libusl.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-android.so:system/lib/libva-android.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva.so:system/lib/libva.so \
@@ -364,8 +333,13 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_core_pvwrapped.so:system/lib/libwrs_omxil_core_pvwrapped.so \
     vendor/intel/cherrytrail-common/proprietary/lib/soundfx/liblpepreprocessing.so:system/lib/soundfx/liblpepreprocessing.so \
     vendor/intel/cherrytrail-common/proprietary/lib/ssl/engines/libkeystore.so:system/lib/ssl/engines/libkeystore.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/coreu:system/vendor/bin/coreu \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/fg_algo_iface:system/vendor/bin/fg_algo_iface \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/gfxd:system/vendor/bin/gfxd \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/hdcpd:system/vendor/bin/hdcpd \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/msync:system/vendor/bin/msync \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
+    vendor/intel/cherrytrail-common/proprietary/vendor/firmware/i915/huc_gen8.bin:system/vendor/firmware/i915/huc_gen8.bin \
     vendor/intel/cherrytrail-common/proprietary/vendor/intel/silent_lake/UUID.db:system/vendor/intel/silent_lake/UUID.db \
     vendor/intel/cherrytrail-common/proprietary/vendor/Khronos/OpenCL/vendors/Intel.icd:system/vendor/Khronos/OpenCL/vendors/Intel.icd \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfng9_img_cbk.o:system/vendor/lib/clbltfng9_img_cbk.o \
@@ -382,24 +356,53 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfnv8_img_cbk.rtl:system/vendor/lib/clbltfnv8_img_cbk.rtl \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfnv8.rtl:system/vendor/lib/clbltfnv8.rtl \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/egl/libGLES_intel8.so:system/vendor/lib/egl/libGLES_intel8.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/gralloc.gmin.so:system/vendor/lib/hw/gralloc.gmin.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/hwcomposer.gmin.so:system/vendor/lib/hw/hwcomposer.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/power.gmin.so:system/vendor/lib/hw/power.gmin.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/i965_drv_video.so:system/vendor/lib/i965_drv_video.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/igdclbif.bin:system/vendor/lib/igdclbif.bin \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/igfxcmjit32.so:system/vendor/lib/igfxcmjit32.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/igfxcmrt32.so:system/vendor/lib/igfxcmrt32.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libclang_compiler.so:system/vendor/lib/libclang_compiler.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcl_logger.so:system/vendor/lib/libcl_logger.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcommon_clang.so:system/vendor/lib/libcommon_clang.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcoreuclient.so:system/vendor/lib/libcoreuclient.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcoreuinterface.so:system/vendor/lib/libcoreuinterface.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcoreuservice.so:system/vendor/lib/libcoreuservice.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcpu_device.so:system/vendor/lib/libcpu_device.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libfg_ti_algo.so:system/vendor/lib/libfg_ti_algo.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgnustl_shared.so:system/vendor/lib/libgnustl_shared.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocclient.so:system/vendor/lib/libgrallocclient.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocgmm.so:system/vendor/lib/libgrallocgmm.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgsmgr.so:system/vendor/lib/libgsmgr.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libhwcservice.so:system/vendor/lib/libhwcservice.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdbcl.so:system/vendor/lib/libigdbcl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdfcl.so:system/vendor/lib/libigdfcl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdlbva.so:system/vendor/lib/libigdlbva.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdmcl.so:system/vendor/lib/libigdmcl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdrcl.so:system/vendor/lib/libigdrcl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdrsmlc.so:system/vendor/lib/libigdrsmlc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdusc.so:system/vendor/lib/libigdusc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigfxcmjit.so:system/vendor/lib/libigfxcmjit.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigfxcmrt.so:system/vendor/lib/libigfxcmrt.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libintelocl.so:system/vendor/lib/libintelocl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libIntelOpenCL.so:system/vendor/lib/libIntelOpenCL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libivp.so:system/vendor/lib/libivp.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libmd.so:system/vendor/lib/libmd.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOclCpuBackEnd.so:system/vendor/lib/libOclCpuBackEnd.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libpavp.so:system/vendor/lib/libpavp.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libpcp.so:system/vendor/lib/libpcp.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libplatforminfo.so:system/vendor/lib/libplatforminfo.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libRSDriver_intel.so:system/vendor/lib/libRSDriver_intel.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libRSDriverUmd_intel.so:system/vendor/lib/libRSDriverUmd_intel.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libskuwa.so:system/vendor/lib/libskuwa.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtask_executor.so:system/vendor/lib/libtask_executor.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbbmalloc.so:system/vendor/lib/libtbbmalloc.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbb.so:system/vendor/lib/libtbb.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libuevent.so:system/vendor/lib/libuevent.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
