@@ -322,7 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa-subsystem.so:system/lib/libtinyalsa-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinycompress.so:system/lib/libtinycompress.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libtxei.so:system/lib/libtxei.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libusl.so:system/lib/libusl.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-android.so:system/lib/libva-android.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva.so:system/lib/libva.so \
@@ -332,7 +331,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_common.so:system/lib/libwrs_omxil_common.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_core_pvwrapped.so:system/lib/libwrs_omxil_core_pvwrapped.so \
     vendor/intel/cherrytrail-common/proprietary/lib/soundfx/liblpepreprocessing.so:system/lib/soundfx/liblpepreprocessing.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/ssl/engines/libkeystore.so:system/lib/ssl/engines/libkeystore.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/coreu:system/vendor/bin/coreu \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/fg_algo_iface:system/vendor/bin/fg_algo_iface \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/gfxd:system/vendor/bin/gfxd \
