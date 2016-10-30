@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/keystore.gmin.so:system/lib/hw/keystore.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/memtrack.gmin.so:system/lib/hw/memtrack.gmin.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/hw/power.gmin.so:system/lib/hw/power.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libakmd09911.so:system/lib/libakmd09911.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libaudioresample.so:system/lib/libaudioresample.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libaware_client.so:system/lib/libaware_client.so \
@@ -360,7 +361,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/egl/libGLES_intel8.so:system/vendor/lib/egl/libGLES_intel8.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/gralloc.gmin.so:system/vendor/lib/hw/gralloc.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/hwcomposer.gmin.so:system/vendor/lib/hw/hwcomposer.gmin.so \
-    vendor/intel/cherrytrail-common/proprietary/vendor/lib/hw/power.gmin.so:system/vendor/lib/hw/power.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/i965_drv_video.so:system/vendor/lib/i965_drv_video.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/igdclbif.bin:system/vendor/lib/igdclbif.bin \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/igfxcmjit32.so:system/vendor/lib/igfxcmjit32.so \
