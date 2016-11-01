@@ -267,12 +267,12 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libiha.so:system/lib/libiha.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libimc-subsystem.so:system/lib/libimc-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libimf.so:system/lib/libimf.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libintelmetadatabuffer.so:system/lib/libintelmetadatabuffer.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libinterface-provider-lib.so:system/lib/libinterface-provider-lib.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libinterface-provider.so:system/lib/libinterface-provider.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libintlc.so:system/lib/libintlc.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libirng.so:system/lib/libirng.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libisv_omx_core.so:system/lib/libisv_omx_core.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libisv.so:system/lib/libisv.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmdp_omx_core.so:system/lib/libmdp_omx_core.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmeimm.so:system/lib/libmeimm.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmei.so:system/lib/libmei.so \
@@ -285,10 +285,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libmixvbp.so:system/lib/libmixvbp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libmodem-audio-collection.so:system/lib/libmodem-audio-collection.so \
     vendor/intel/cherrytrail-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoDecoderH263.so:system/lib/libOMXVideoDecoderH263.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoDecoderMPEG4.so:system/lib/libOMXVideoDecoderMPEG4.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoEncoderH263.so:system/lib/libOMXVideoEncoderH263.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libOMXVideoEncoderMPEG4.so:system/lib/libOMXVideoEncoderMPEG4.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libparameter.so:system/lib/libparameter.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libpciaccess.so:system/lib/libpciaccess.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libpower-subsystem.so:system/lib/libpower-subsystem.so \
@@ -309,13 +305,10 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_aacdec_mdp.so:system/lib/libstagefright_soft_aacdec_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_aacenc_mdp.so:system/lib/libstagefright_soft_aacenc_mdp.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_alacdec.so:system/lib/libstagefright_soft_alacdec.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_amrdec_mdp.so:system/lib/libstagefright_soft_amrdec_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_amrenc_mdp.so:system/lib/libstagefright_soft_amrenc_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_mp3dec_mdp.so:system/lib/libstagefright_soft_mp3dec_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_vorbisdec_mdp.so:system/lib/libstagefright_soft_vorbisdec_mdp.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_wmadec_mdp.so:system/lib/libstagefright_soft_wmadec_mdp.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsvml.so:system/lib/libsvml.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libthermalJNI.so:system/lib/libthermalJNI.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa_custom-subsystem.so:system/lib/libtinyalsa_custom-subsystem.so \
@@ -326,8 +319,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-android.so:system/lib/libva-android.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva.so:system/lib/libva.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-tpi.so:system/lib/libva-tpi.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libva_videodecoder.so:system/lib/libva_videodecoder.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libva_videoencoder.so:system/lib/libva_videoencoder.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_common.so:system/lib/libwrs_omxil_common.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_core_pvwrapped.so:system/lib/libwrs_omxil_core_pvwrapped.so \
     vendor/intel/cherrytrail-common/proprietary/lib/soundfx/liblpepreprocessing.so:system/lib/soundfx/liblpepreprocessing.so \
@@ -385,11 +376,16 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdusc.so:system/vendor/lib/libigdusc.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigfxcmjit.so:system/vendor/lib/libigfxcmjit.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigfxcmrt.so:system/vendor/lib/libigfxcmrt.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libintelmetadatabuffer.so:system/vendor/lib/libintelmetadatabuffer.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libintelocl.so:system/vendor/lib/libintelocl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libIntelOpenCL.so:system/vendor/lib/libIntelOpenCL.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libivp.so:system/vendor/lib/libivp.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libmd.so:system/vendor/lib/libmd.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOclCpuBackEnd.so:system/vendor/lib/libOclCpuBackEnd.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOMXVideoDecoderH263.so:system/vendor/lib/libOMXVideoDecoderH263.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOMXVideoDecoderMPEG4.so:system/vendor/lib/libOMXVideoDecoderMPEG4.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOMXVideoEncoderH263.so:system/vendor/lib/libOMXVideoEncoderH263.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOMXVideoEncoderMPEG4.so:system/vendor/lib/libOMXVideoEncoderMPEG4.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libpavp.so:system/vendor/lib/libpavp.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libpcp.so:system/vendor/lib/libpcp.so \
@@ -401,6 +397,8 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbbmalloc.so:system/vendor/lib/libtbbmalloc.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbb.so:system/vendor/lib/libtbb.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libuevent.so:system/vendor/lib/libuevent.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libva_videodecoder.so:system/vendor/lib/libva_videodecoder.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libva_videoencoder.so:system/vendor/lib/libva_videoencoder.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
