@@ -34,15 +34,15 @@
 -->
 	</Sensor>
 
+<!--
 	<Sensor>
 		<SensorName>STR3</SensorName>
-<!--
 		<SensorPath>auto</SensorPath>
 		<InputTemp>temp</InputTemp>
 		<HighTemp>auto</HighTemp>
 		<LowTemp>auto</LowTemp>
--->
 	</Sensor>
+-->
 
 	<Sensor>
 		<SensorName>dollar_cove_battery</SensorName>
@@ -58,22 +58,26 @@
 	-->
 	</Sensor>
 
+	<!-- CPU DTS should not be monitored and acted upon
+	in CHT as FW mechanism(RATL) is available for monitoring
+	DTS and taking appropriate throttle action.
 	<Sensor>
 		<SensorName>Coretemp</SensorName>
 		<SensorPath>/sys/devices/platform/coretemp.0/</SensorPath>
 		<InputTemp>temp2_input</InputTemp>
 		<HighTemp>none</HighTemp>
 		<LowTemp>none</LowTemp>
-	</Sensor>
+	</Sensor>-->
 
 <Profile>
 	<Name>Default</Name>
 	<Zone>
 		<ZoneID>1</ZoneID>
-		<ZoneName>STR0</ZoneName>
-		<ZoneLogic>Raw</ZoneLogic>
+		<ZoneName>BackSkin</ZoneName>
+		<ZoneLogic>VirtualSkin</ZoneLogic>
 		<SupportsUEvent>0</SupportsUEvent>
-		<DebounceInterval>0</DebounceInterval>
+		<SupportsEmulTemp>0</SupportsEmulTemp>
+		<DebounceInterval>2000</DebounceInterval>
 		<PollDelay>
 			<DelayNormal>30000</DelayNormal>
 			<DelayWarning>30000</DelayWarning>
@@ -85,22 +89,46 @@
 			<WindowAlert>120000</WindowAlert>
 		</MovingAverageWindow>
 		<ZoneThreshold>
-			<ZoneThresholdNormal>70000</ZoneThresholdNormal>
-			<ZoneThresholdWarning>75000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>80000</ZoneThresholdAlert>
+			<ZoneThresholdNormal>47000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>56000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
+			<Weight>964</Weight>
 		</SensorAttrib>
-		<!--SensorAttrib>
-			<SensorName>SYSTHERM1</SensorName>
-			<Weight>680</Weight>
-		</SensorAttrib>
-		<Offset>8400</Offset-->
+		<Offset>-1843</Offset>
 	</Zone>
-
 	<Zone>
 		<ZoneID>2</ZoneID>
+		<ZoneName>FrontSkin</ZoneName>
+		<ZoneLogic>VirtualSkin</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<SupportsEmulTemp>0</SupportsEmulTemp>
+		<DebounceInterval>2000</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<MovingAverageWindow>
+			<WindowNormal>120000</WindowNormal>
+			<WindowWarning>120000</WindowWarning>
+			<WindowAlert>120000</WindowAlert>
+		</MovingAverageWindow>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>46000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>63000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>STR0</SensorName>
+			<Weight>721</Weight>
+		</SensorAttrib>
+		<Offset>3377</Offset>
+	</Zone>
+	<Zone>
+		<ZoneID>3</ZoneID>
 		<ZoneName>Battery</ZoneName>
 		<ZoneLogic>Raw</ZoneLogic>
 		<SupportsUEvent>0</SupportsUEvent>
@@ -119,27 +147,10 @@
 			<SensorName>dollar_cove_battery</SensorName>
 		</SensorAttrib>
 	</Zone>
-	<Zone>
-		<ZoneID>3</ZoneID>
-		<ZoneName>SoC</ZoneName>
-		<ZoneLogic>Raw</ZoneLogic>
-		<SupportsUEvent>0</SupportsUEvent>
-		<DebounceInterval>0</DebounceInterval>
-		<PollDelay>
-			<DelayNormal>30000</DelayNormal>
-			<DelayWarning>30000</DelayWarning>
-			<DelayAlert>30000</DelayAlert>
-		</PollDelay>
-		<ZoneThreshold>
-			<ZoneThresholdNormal>84000</ZoneThresholdNormal>
-			<ZoneThresholdWarning>87000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>89000</ZoneThresholdAlert>
-		</ZoneThreshold>
-		<SensorAttrib>
-			<SensorName>Coretemp</SensorName>
-		</SensorAttrib>
-	</Zone>
-	<Zone>
+<!-- This zone is applicable only for cht_t3_rvp + TI PMIC Combo -->
+<!-- Commenting out this zone as it is not applicable for cht-t3-mrd -->
+<!--
+		<Zone>
 		<ZoneID>4</ZoneID>
 		<ZoneName>Battery_TI_PMIC</ZoneName>
 		<ZoneLogic>Raw</ZoneLogic>
@@ -159,16 +170,18 @@
 			<SensorName>intel_fuel_gauge</SensorName>
 		</SensorAttrib>
 	</Zone>
+-->
 </Profile>
 
 <Profile>
 	<Name>BatterySaver</Name>
 	<Zone>
 		<ZoneID>1</ZoneID>
-		<ZoneName>STR0</ZoneName>
-		<ZoneLogic>Raw</ZoneLogic>
+		<ZoneName>BackSkin</ZoneName>
+		<ZoneLogic>VirtualSkin</ZoneLogic>
 		<SupportsUEvent>0</SupportsUEvent>
-		<DebounceInterval>0</DebounceInterval>
+		<SupportsEmulTemp>0</SupportsEmulTemp>
+		<DebounceInterval>2000</DebounceInterval>
 		<PollDelay>
 			<DelayNormal>30000</DelayNormal>
 			<DelayWarning>30000</DelayWarning>
@@ -180,22 +193,46 @@
 			<WindowAlert>120000</WindowAlert>
 		</MovingAverageWindow>
 		<ZoneThreshold>
-			<ZoneThresholdNormal>70000</ZoneThresholdNormal>
-			<ZoneThresholdWarning>75000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>80000</ZoneThresholdAlert>
+			<ZoneThresholdNormal>47000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>56000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>68000</ZoneThresholdAlert>
 		</ZoneThreshold>
 		<SensorAttrib>
 			<SensorName>STR0</SensorName>
+			<Weight>964</Weight>
 		</SensorAttrib>
-		<!--SensorAttrib>
-			<SensorName>SYSTHERM1</SensorName>
-			<Weight>680</Weight>
-		</SensorAttrib>
-		<Offset>8400</Offset-->
+		<Offset>-1843</Offset>
 	</Zone>
-
 	<Zone>
 		<ZoneID>2</ZoneID>
+		<ZoneName>FrontSkin</ZoneName>
+		<ZoneLogic>VirtualSkin</ZoneLogic>
+		<SupportsUEvent>0</SupportsUEvent>
+		<SupportsEmulTemp>0</SupportsEmulTemp>
+		<DebounceInterval>2000</DebounceInterval>
+		<PollDelay>
+			<DelayNormal>30000</DelayNormal>
+			<DelayWarning>30000</DelayWarning>
+			<DelayAlert>30000</DelayAlert>
+		</PollDelay>
+		<MovingAverageWindow>
+			<WindowNormal>120000</WindowNormal>
+			<WindowWarning>120000</WindowWarning>
+			<WindowAlert>120000</WindowAlert>
+		</MovingAverageWindow>
+		<ZoneThreshold>
+			<ZoneThresholdNormal>46000</ZoneThresholdNormal>
+			<ZoneThresholdWarning>57000</ZoneThresholdWarning>
+			<ZoneThresholdAlert>63000</ZoneThresholdAlert>
+		</ZoneThreshold>
+		<SensorAttrib>
+			<SensorName>STR0</SensorName>
+			<Weight>721</Weight>
+		</SensorAttrib>
+		<Offset>3377</Offset>
+	</Zone>
+	<Zone>
+		<ZoneID>3</ZoneID>
 		<ZoneName>Battery</ZoneName>
 		<ZoneLogic>Raw</ZoneLogic>
 		<SupportsUEvent>0</SupportsUEvent>
@@ -214,26 +251,9 @@
 			<SensorName>dollar_cove_battery</SensorName>
 		</SensorAttrib>
 	</Zone>
-	<Zone>
-		<ZoneID>3</ZoneID>
-		<ZoneName>SoC</ZoneName>
-		<ZoneLogic>Raw</ZoneLogic>
-		<SupportsUEvent>0</SupportsUEvent>
-		<DebounceInterval>0</DebounceInterval>
-		<PollDelay>
-			<DelayNormal>30000</DelayNormal>
-			<DelayWarning>30000</DelayWarning>
-			<DelayAlert>30000</DelayAlert>
-		</PollDelay>
-		<ZoneThreshold>
-			<ZoneThresholdNormal>84000</ZoneThresholdNormal>
-			<ZoneThresholdWarning>87000</ZoneThresholdWarning>
-			<ZoneThresholdAlert>89000</ZoneThresholdAlert>
-		</ZoneThreshold>
-		<SensorAttrib>
-			<SensorName>Coretemp</SensorName>
-		</SensorAttrib>
-	</Zone>
+<!-- This zone is applicable only for cht_t3_rvp + TI PMIC Combo -->
+<!-- Commenting out this zone as it is not applicable for cht-t3-mrd -->
+<!--
 	<Zone>
 		<ZoneID>4</ZoneID>
 		<ZoneName>Battery_TI_PMIC</ZoneName>
@@ -254,6 +274,7 @@
 			<SensorName>intel_fuel_gauge</SensorName>
 		</SensorAttrib>
 	</Zone>
+-->
 </Profile>
 
 </thermalconfig>

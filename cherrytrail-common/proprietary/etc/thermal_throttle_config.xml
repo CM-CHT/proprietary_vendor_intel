@@ -54,12 +54,12 @@
 		</ThrottleValues>
 	</ContributingDeviceInfo>
 
-        <ContributingDeviceInfo>
-                <CDeviceName>vbus_control</CDeviceName>
-                <CDeviceID>3</CDeviceID>
-                <CDeviceClassPath>auto</CDeviceClassPath>
-                <CDeviceThrottlePath>auto</CDeviceThrottlePath>
-                <ThrottleValues>
+	<ContributingDeviceInfo>
+		<CDeviceName>vbus_control</CDeviceName>
+		<CDeviceID>3</CDeviceID>
+		<CDeviceClassPath>auto</CDeviceClassPath>
+		<CDeviceThrottlePath>auto</CDeviceThrottlePath>
+		<ThrottleValues>
 			<ThrottleNormal>0</ThrottleNormal>
 			<ThrottleWarning>1</ThrottleWarning>
 			<ThrottleAlert>1</ThrottleAlert>
@@ -88,6 +88,32 @@
 		</ThrottleValues>
 	</ContributingDeviceInfo>
 
+	<!-- Setting the Charge Current Throttle Limits as below,
+			max_charge_current=3000 mA and
+			max_state (throttle level) would be the platform supported
+			(max_charge_current/100mA)+1 -> max_state=31.
+			Charge Control (CC) = (max_state - current_level - 1)*100
+			i.e. for level 20 => CC=(31-20-1)*100 => 1000 mA
+	-->
+<!-- This cooling is applicable only for cht_t3_rvp + TI PMIC Combo -->
+<!-- Commenting out this cooling device as it is not applicable for cht-t3-mrd -->
+<!--
+	<ContributingDeviceInfo>
+		<CDeviceName>bq24192_charger</CDeviceName>
+		<CDeviceID>6</CDeviceID>
+		<CDeviceClassPath>auto</CDeviceClassPath>
+		<CDeviceThrottlePath>auto</CDeviceThrottlePath>
+		<ThrottleValues>-->
+		<!-- Setting the charge current to 3000mA for Normal temperature zone -->
+			<!--<ThrottleNormal>0</ThrottleNormal>-->
+		<!-- Setting the charge current to 1000mA for Warning temperature zone -->
+			<!--<ThrottleWarning>20</ThrottleWarning>-->
+		<!-- Disabling the charging for Alert temperature zone -->
+			<!--<ThrottleAlert>30</ThrottleAlert>
+		</ThrottleValues>
+	</ContributingDeviceInfo>
+-->
+
 <!--
         <ContributingDeviceInfo>
                 <CDeviceName>Wifi</CDeviceName>
@@ -100,18 +126,6 @@
                 </ThrottleValues>
         </ContributingDeviceInfo>
 -->
-        <ContributingDeviceInfo>
-                <CDeviceName>GpuDVFS</CDeviceName>
-                <CDeviceID>9</CDeviceID>
-                <CDeviceClassPath>com.intel.thermal.GpuDvfsControl</CDeviceClassPath>
-                <ThrottleValues>
-                        <ThrottleNormal>600</ThrottleNormal>
-                        <ThrottleNormal1>600</ThrottleNormal1>
-                        <ThrottleNormal2>200</ThrottleNormal2>
-                        <ThrottleWarning>200</ThrottleWarning>
-                        <ThrottleAlert>200</ThrottleAlert>
-                </ThrottleValues>
-        </ContributingDeviceInfo>
 
 <Profile>
 	<Name>Default</Name>
@@ -124,35 +138,26 @@
 		<CoolingDeviceInfo>
 			<CoolingDevId>2</CoolingDevId>
 		</CoolingDeviceInfo>
-		<CoolingDeviceInfo>
-			<CoolingDevId>5</CoolingDevId>
-		</CoolingDeviceInfo>
+		<!--<CoolingDeviceInfo>
+			<CoolingDevId>6</CoolingDevId>
+		</CoolingDeviceInfo>-->
 	</ZoneThrottleInfo>
-
 	<ZoneThrottleInfo>
 		<ZoneID>2</ZoneID>
 		<CriticalShutDown>1</CriticalShutDown>
 		<CoolingDeviceInfo>
 			<CoolingDevId>1</CoolingDevId>
 		</CoolingDeviceInfo>
-                <CoolingDeviceInfo>
-                        <CoolingDeviceStates>5</CoolingDeviceStates>
-                        <CoolingDevId>9</CoolingDevId>
-                        <ThrottleDeviceMask>
-                            <Normal>0</Normal>
-                            <Normal1>0</Normal1>
-                            <Normal2>1</Normal2>
-                            <Warning>1</Warning>
-                            <Alert>1</Alert>
-                        </ThrottleDeviceMask>
-                        <DethrottleDeviceMask>
-                            <Normal>1</Normal>
-                            <Normal1>1</Normal1>
-                            <Normal2>0</Normal2>
-                            <Warning>0</Warning>
-                            <Alert>0</Alert>
-                        </DethrottleDeviceMask>
-                </CoolingDeviceInfo>
+		<CoolingDeviceInfo>
+			<CoolingDevId>5</CoolingDevId>
+		</CoolingDeviceInfo>
+	</ZoneThrottleInfo>
+	<ZoneThrottleInfo>
+		<ZoneID>3</ZoneID>
+		<CriticalShutDown>1</CriticalShutDown>
+		<CoolingDeviceInfo>
+			<CoolingDevId>1</CoolingDevId>
+		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
 			<CoolingDevId>2</CoolingDevId>
 		</CoolingDeviceInfo>
@@ -160,15 +165,9 @@
 			<CoolingDevId>5</CoolingDevId>
 		</CoolingDeviceInfo>
 	</ZoneThrottleInfo>
-
-	<ZoneThrottleInfo>
-		<ZoneID>3</ZoneID>
-		<CriticalShutDown>0</CriticalShutDown>
-		<CoolingDeviceInfo>
-			<CoolingDevId>1</CoolingDevId>
-		</CoolingDeviceInfo>
-	</ZoneThrottleInfo>
-
+<!-- This cooling is applicable only for cht_t3_rvp + TI PMIC Combo -->
+<!-- Commenting out this cooling device as it is not applicable for cht-t3-mrd -->
+<!--
 	<ZoneThrottleInfo>
 		<ZoneID>4</ZoneID>
 		<CriticalShutDown>1</CriticalShutDown>
@@ -176,12 +175,13 @@
 			<CoolingDevId>1</CoolingDevId>
 		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
-			<CoolingDevId>2</CoolingDevId>
+			<CoolingDevId>6</CoolingDevId>
 		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
 			<CoolingDevId>5</CoolingDevId>
 		</CoolingDeviceInfo>
 	</ZoneThrottleInfo>
+-->
 </Profile>
 
 <Profile>
@@ -200,35 +200,26 @@
 		<CoolingDeviceInfo>
 			<CoolingDevId>2</CoolingDevId>
 		</CoolingDeviceInfo>
-		<CoolingDeviceInfo>
-			<CoolingDevId>5</CoolingDevId>
-		</CoolingDeviceInfo>
+		<!--<CoolingDeviceInfo>
+			<CoolingDevId>6</CoolingDevId>
+		</CoolingDeviceInfo>-->
 	</ZoneThrottleInfo>
-
 	<ZoneThrottleInfo>
 		<ZoneID>2</ZoneID>
 		<CriticalShutDown>1</CriticalShutDown>
 		<CoolingDeviceInfo>
 			<CoolingDevId>1</CoolingDevId>
 		</CoolingDeviceInfo>
-                <CoolingDeviceInfo>
-                        <CoolingDeviceStates>5</CoolingDeviceStates>
-                        <CoolingDevId>9</CoolingDevId>
-                        <ThrottleDeviceMask>
-                            <Normal>0</Normal>
-                            <Normal1>0</Normal1>
-                            <Normal2>1</Normal2>
-                            <Warning>1</Warning>
-                            <Alert>1</Alert>
-                        </ThrottleDeviceMask>
-                        <DethrottleDeviceMask>
-                            <Normal>1</Normal>
-                            <Normal1>1</Normal1>
-                            <Normal2>0</Normal2>
-                            <Warning>0</Warning>
-                            <Alert>0</Alert>
-                        </DethrottleDeviceMask>
-                </CoolingDeviceInfo>
+		<CoolingDeviceInfo>
+			<CoolingDevId>5</CoolingDevId>
+		</CoolingDeviceInfo>
+	</ZoneThrottleInfo>
+	<ZoneThrottleInfo>
+		<ZoneID>3</ZoneID>
+		<CriticalShutDown>1</CriticalShutDown>
+		<CoolingDeviceInfo>
+			<CoolingDevId>1</CoolingDevId>
+		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
 			<CoolingDevId>2</CoolingDevId>
 		</CoolingDeviceInfo>
@@ -237,14 +228,9 @@
 		</CoolingDeviceInfo>
 	</ZoneThrottleInfo>
 
-	<ZoneThrottleInfo>
-		<ZoneID>3</ZoneID>
-		<CriticalShutDown>0</CriticalShutDown>
-		<CoolingDeviceInfo>
-			<CoolingDevId>1</CoolingDevId>
-		</CoolingDeviceInfo>
-	</ZoneThrottleInfo>
-
+<!-- This cooling is applicable only for cht_t3_rvp + TI PMIC Combo -->
+<!-- Commenting out this cooling device as it is not applicable for cht-t3-mrd -->
+<!--
 	<ZoneThrottleInfo>
 		<ZoneID>4</ZoneID>
 		<CriticalShutDown>1</CriticalShutDown>
@@ -252,11 +238,12 @@
 			<CoolingDevId>1</CoolingDevId>
 		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
-			<CoolingDevId>2</CoolingDevId>
+			<CoolingDevId>6</CoolingDevId>
 		</CoolingDeviceInfo>
 		<CoolingDeviceInfo>
 			<CoolingDevId>5</CoolingDevId>
 		</CoolingDeviceInfo>
 	</ZoneThrottleInfo>
+-->
 </Profile>
 </thermalthrottleconfig>

@@ -167,7 +167,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_vorbisdec_mdp.so:system/lib/libstagefright_soft_vorbisdec_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsvml.so:system/lib/libsvml.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libthermalJNI.so:system/lib/libthermalJNI.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa_custom-subsystem.so:system/lib/libtinyalsa_custom-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa-subsystem.so:system/lib/libtinyalsa-subsystem.so \
@@ -407,6 +406,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtask_executor.so:system/vendor/lib/libtask_executor.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbbmalloc.so:system/vendor/lib/libtbbmalloc.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libtbb.so:system/vendor/lib/libtbb.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libthermalJNI.so:system/vendor/lib/libthermalJNI.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libuevent.so:system/vendor/lib/libuevent.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libva_videodecoder.so:system/vendor/lib/libva_videodecoder.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libva_videoencoder.so:system/vendor/lib/libva_videoencoder.so \
@@ -421,5 +421,5 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/__ocl_svml_v8.so:system/vendor/lib/__ocl_svml_v8.so
 
 PRODUCT_PACKAGES += \
-    ituxd \
+    itux \
     com.intel.security.service.sepmanager

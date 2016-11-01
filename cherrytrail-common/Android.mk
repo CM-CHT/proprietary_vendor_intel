@@ -19,9 +19,9 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter chuwi_vi10plus cube_iwork8ultimate,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ituxd
+LOCAL_MODULE := itux
 LOCAL_MODULE_OWNER := intel
-LOCAL_SRC_FILES := proprietary/priv-app/ituxd/ituxd.apk
+LOCAL_SRC_FILES := proprietary/priv-app/itux/itux.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
