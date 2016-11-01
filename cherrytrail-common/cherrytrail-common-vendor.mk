@@ -326,8 +326,10 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/fg_algo_iface:system/vendor/bin/fg_algo_iface \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/gfxd:system/vendor/bin/gfxd \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/hdcpd:system/vendor/bin/hdcpd \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/intel_prop:system/vendor/bin/intel_prop \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/msync:system/vendor/bin/msync \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
+    vendor/intel/cherrytrail-common/proprietary/vendor/etc/intel_prop.cfg:system/vendor/etc/intel_prop.cfg \
     vendor/intel/cherrytrail-common/proprietary/vendor/firmware/i915/huc_gen8.bin:system/vendor/firmware/i915/huc_gen8.bin \
     vendor/intel/cherrytrail-common/proprietary/vendor/intel/silent_lake/UUID.db:system/vendor/intel/silent_lake/UUID.db \
     vendor/intel/cherrytrail-common/proprietary/vendor/Khronos/OpenCL/vendors/Intel.icd:system/vendor/Khronos/OpenCL/vendors/Intel.icd \
