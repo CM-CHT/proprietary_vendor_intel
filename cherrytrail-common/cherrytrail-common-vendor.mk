@@ -17,13 +17,10 @@
 PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/app/Bluetooth/Bluetooth.apk:system/app/Bluetooth/Bluetooth.apk \
     vendor/intel/cherrytrail-common/proprietary/bin/bcu_cpufreqrel:system/bin/bcu_cpufreqrel \
-    vendor/intel/cherrytrail-common/proprietary/bin/houdini:system/bin/houdini \
     vendor/intel/cherrytrail-common/proprietary/bin/keymaster_meid:system/bin/keymaster_meid \
     vendor/intel/cherrytrail-common/proprietary/bin/otpserver:system/bin/otpserver \
     vendor/intel/cherrytrail-common/proprietary/bin/sensorhubd:system/bin/sensorhubd \
     vendor/intel/cherrytrail-common/proprietary/bin/sl_si_service:system/bin/sl_si_service \
-    vendor/intel/cherrytrail-common/proprietary/etc/binfmt_misc/arm_dyn:system/etc/binfmt_misc/arm_dyn \
-    vendor/intel/cherrytrail-common/proprietary/etc/binfmt_misc/arm_exe:system/etc/binfmt_misc/arm_exe \
     vendor/intel/cherrytrail-common/proprietary/etc/camera_profiles.xml:system/etc/camera_profiles.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/bt/rtl8723b_config:system/etc/firmware/bt/rtl8723b_config \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/bt/rtl8723b_fw:system/etc/firmware/bt/rtl8723b_fw \
@@ -88,151 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/etc/tuning/audio/layout_ui.xml:system/etc/tuning/audio/layout_ui.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/video_isv_profile.xml:system/etc/video_isv_profile.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/cpuinfo:system/lib/arm/cpuinfo \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libandroidfw.so:system/lib/arm/libandroidfw.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libandroid_runtime.so:system/lib/arm/libandroid_runtime.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libandroid.so:system/lib/arm/libandroid.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libartiw.so:system/lib/arm/libartiw.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libart.so:system/lib/arm/libart.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libaudioflinger.so:system/lib/arm/libaudioflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libaudioresampler.so:system/lib/arm/libaudioresampler.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libaudioutils.so:system/lib/arm/libaudioutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libbacktrace_libc++.so:system/lib/arm/libbacktrace_libc++.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libbacktrace.so:system/lib/arm/libbacktrace.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libbcc.so:system/lib/arm/libbcc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libbcinfo.so:system/lib/arm/libbcinfo.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libbinder.so:system/lib/arm/libbinder.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcamera_client.so:system/lib/arm/libcamera_client.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcamera_metadata.so:system/lib/arm/libcamera_metadata.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcommon_time_client.so:system/lib/arm/libcommon_time_client.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcompiler_rt.so:system/lib/arm/libcompiler_rt.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcrypto.so:system/lib/arm/libcrypto.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libc.so:system/lib/arm/libc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libc++.so:system/lib/arm/libc++.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libcutils.so:system/lib/arm/libcutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libdl.so:system/lib/arm/libdl.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libdrmframework.so:system/lib/arm/libdrmframework.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libeffects.so:system/lib/arm/libeffects.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libEGL.so:system/lib/arm/libEGL.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libemoji.so:system/lib/arm/libemoji.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libETC1.so:system/lib/arm/libETC1.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libexpat.so:system/lib/arm/libexpat.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libFFTEm.so:system/lib/arm/libFFTEm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libfilterfw.so:system/lib/arm/libfilterfw.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libfilterpack_imageproc.so:system/lib/arm/libfilterpack_imageproc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libft2.so:system/lib/arm/libft2.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libgabi++.so:system/lib/arm/libgabi++.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libgccdemangle.so:system/lib/arm/libgccdemangle.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libGLES_trace.so:system/lib/arm/libGLES_trace.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libGLESv1_CM.so:system/lib/arm/libGLESv1_CM.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libGLESv2.so:system/lib/arm/libGLESv2.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libGLESv3.so:system/lib/arm/libGLESv3.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libgui.so:system/lib/arm/libgui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libhalclient.so:system/lib/arm/libhalclient.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libhardware_legacy.so:system/lib/arm/libhardware_legacy.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libhardware.so:system/lib/arm/libhardware.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libharfbuzz_ng.so:system/lib/arm/libharfbuzz_ng.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libhwui.so:system/lib/arm/libhwui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libicui18n.so:system/lib/arm/libicui18n.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libicuuc.so:system/lib/arm/libicuuc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libimg_utils.so:system/lib/arm/libimg_utils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libinputflinger.so:system/lib/arm/libinputflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libinput.so:system/lib/arm/libinput.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libjnigraphics.so:system/lib/arm/libjnigraphics.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libjpeg.so:system/lib/arm/libjpeg.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libLLVM.so:system/lib/arm/libLLVM.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/liblog.so:system/lib/arm/liblog.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libmediandk.so:system/lib/arm/libmediandk.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libmedia.so:system/lib/arm/libmedia.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libmemtrack.so:system/lib/arm/libmemtrack.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libminikin.so:system/lib/arm/libminikin.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libm.so:system/lib/arm/libm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnativebridge.so:system/lib/arm/libnativebridge.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnativehelper.so:system/lib/arm/libnativehelper.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnbaio.so:system/lib/arm/libnbaio.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnetd_client.so:system/lib/arm/libnetd_client.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnetutils.so:system/lib/arm/libnetutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libnfc_ndef.so:system/lib/arm/libnfc_ndef.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libOpenMAXAL.so:system/lib/arm/libOpenMAXAL.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libOpenSLES.so:system/lib/arm/libOpenSLES.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libopus.so:system/lib/arm/libopus.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libpcre.so:system/lib/arm/libpcre.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libpdfium.so:system/lib/arm/libpdfium.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libpixelflinger.so:system/lib/arm/libpixelflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libpng.so:system/lib/arm/libpng.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libpowermanager.so:system/lib/arm/libpowermanager.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libprocessgroup.so:system/lib/arm/libprocessgroup.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libRScpp.so:system/lib/arm/libRScpp.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libRSCpuRef.so:system/lib/arm/libRSCpuRef.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libRSDriver.so:system/lib/arm/libRSDriver.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libRS.so:system/lib/arm/libRS.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libselinux.so:system/lib/arm/libselinux.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libserviceutility.so:system/lib/arm/libserviceutility.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsigchain.so:system/lib/arm/libsigchain.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libskia.so:system/lib/arm/libskia.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsonivox.so:system/lib/arm/libsonivox.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsoundtrigger.so:system/lib/arm/libsoundtrigger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libspeexresampler.so:system/lib/arm/libspeexresampler.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsqlite.so:system/lib/arm/libsqlite.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libssl.so:system/lib/arm/libssl.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_avc_common.so:system/lib/arm/libstagefright_avc_common.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_enc_common.so:system/lib/arm/libstagefright_enc_common.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_foundation.so:system/lib/arm/libstagefright_foundation.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_http_support.so:system/lib/arm/libstagefright_http_support.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_omx.so:system/lib/arm/libstagefright_omx.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright.so:system/lib/arm/libstagefright.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstagefright_yuv.so:system/lib/arm/libstagefright_yuv.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstdc++.so:system/lib/arm/libstdc++.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libstlport.so:system/lib/arm/libstlport.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsurfaceflinger.so:system/lib/arm/libsurfaceflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsync.so:system/lib/arm/libsync.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libsysutils.so:system/lib/arm/libsysutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libui.so:system/lib/arm/libui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libunwind-ptrace.so:system/lib/arm/libunwind-ptrace.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libunwind.so:system/lib/arm/libunwind.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libusbhost.so:system/lib/arm/libusbhost.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libutils.so:system/lib/arm/libutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libvorbisidec.so:system/lib/arm/libvorbisidec.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libwebrtc_audio_coding.so:system/lib/arm/libwebrtc_audio_coding.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libwilhelm.so:system/lib/arm/libwilhelm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/libz.so:system/lib/arm/libz.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/linker:system/lib/arm/linker \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libandroidfw.so:system/lib/arm/nb/libandroidfw.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libandroid_runtime.so:system/lib/arm/nb/libandroid_runtime.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libandroid.so:system/lib/arm/nb/libandroid.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libart.so:system/lib/arm/nb/libart.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libaudioflinger.so:system/lib/arm/nb/libaudioflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libbinder.so:system/lib/arm/nb/libbinder.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libcamera_client.so:system/lib/arm/nb/libcamera_client.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libc.so:system/lib/arm/nb/libc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libcutils.so:system/lib/arm/nb/libcutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libdl.so:system/lib/arm/nb/libdl.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libEGL.so:system/lib/arm/nb/libEGL.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libft2.so:system/lib/arm/nb/libft2.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libGLESv1_CM.so:system/lib/arm/nb/libGLESv1_CM.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libGLESv2.so:system/lib/arm/nb/libGLESv2.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libGLESv3.so:system/lib/arm/nb/libGLESv3.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libgui.so:system/lib/arm/nb/libgui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libhardware_legacy.so:system/lib/arm/nb/libhardware_legacy.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libhwui.so:system/lib/arm/nb/libhwui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libicui18n.so:system/lib/arm/nb/libicui18n.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libicuuc.so:system/lib/arm/nb/libicuuc.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libjnigraphics.so:system/lib/arm/nb/libjnigraphics.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libmediandk.so:system/lib/arm/nb/libmediandk.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libmedia.so:system/lib/arm/nb/libmedia.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libm.so:system/lib/arm/nb/libm.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libnativehelper.so:system/lib/arm/nb/libnativehelper.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libOpenMAXAL.so:system/lib/arm/nb/libOpenMAXAL.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libOpenSLES.so:system/lib/arm/nb/libOpenSLES.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libpcre.so:system/lib/arm/nb/libpcre.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libpixelflinger.so:system/lib/arm/nb/libpixelflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libskia.so:system/lib/arm/nb/libskia.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libsqlite.so:system/lib/arm/nb/libsqlite.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libstagefright.so:system/lib/arm/nb/libstagefright.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libsurfaceflinger.so:system/lib/arm/nb/libsurfaceflinger.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libui.so:system/lib/arm/nb/libui.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libutils.so:system/lib/arm/nb/libutils.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/arm/nb/libz.so:system/lib/arm/nb/libz.so \
     vendor/intel/cherrytrail-common/proprietary/lib/audio.routemanager.so:system/lib/audio.routemanager.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.codec_offload.cherrytrail.so:system/lib/hw/audio.codec_offload.cherrytrail.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.hdmi.gmin.so:system/lib/hw/audio.hdmi.gmin.so \
@@ -255,7 +107,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libfs-subsystem.so:system/lib/libfs-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgabi++-mfx.so:system/lib/libgabi++-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgesture.so:system/lib/libgesture.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libhoudini.so:system/lib/libhoudini.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libhwcwidi.so:system/lib/libhwcwidi.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_aiq.so:system/lib/libia_aiq.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libia_cmc_parser.so:system/lib/libia_cmc_parser.so \
@@ -331,13 +182,164 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/fg_algo_iface:system/vendor/bin/fg_algo_iface \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/gfxd:system/vendor/bin/gfxd \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/hdcpd:system/vendor/bin/hdcpd \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/houdini:system/vendor/bin/houdini \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/intel_prop:system/vendor/bin/intel_prop \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/msync:system/vendor/bin/msync \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
+    vendor/intel/cherrytrail-common/proprietary/vendor/etc/binfmt_misc/arm_dyn:system/vendor/etc/binfmt_misc/arm_dyn \
+    vendor/intel/cherrytrail-common/proprietary/vendor/etc/binfmt_misc/arm_exe:system/vendor/etc/binfmt_misc/arm_exe \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/intel_prop.cfg:system/vendor/etc/intel_prop.cfg \
     vendor/intel/cherrytrail-common/proprietary/vendor/firmware/i915/huc_gen8.bin:system/vendor/firmware/i915/huc_gen8.bin \
     vendor/intel/cherrytrail-common/proprietary/vendor/intel/silent_lake/UUID.db:system/vendor/intel/silent_lake/UUID.db \
     vendor/intel/cherrytrail-common/proprietary/vendor/Khronos/OpenCL/vendors/Intel.icd:system/vendor/Khronos/OpenCL/vendors/Intel.icd \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/cpuinfo:system/vendor/lib/arm/cpuinfo \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libandroidfw.so:system/vendor/lib/arm/libandroidfw.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libandroid_runtime.so:system/vendor/lib/arm/libandroid_runtime.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libandroid.so:system/vendor/lib/arm/libandroid.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libart.so:system/vendor/lib/arm/libart.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libaudioflinger.so:system/vendor/lib/arm/libaudioflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libaudioresampler.so:system/vendor/lib/arm/libaudioresampler.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libaudiospdif.so:system/vendor/lib/arm/libaudiospdif.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libaudioutils.so:system/vendor/lib/arm/libaudioutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libbacktrace.so:system/vendor/lib/arm/libbacktrace.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libbase.so:system/vendor/lib/arm/libbase.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libbcc.so:system/vendor/lib/arm/libbcc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libbcinfo.so:system/vendor/lib/arm/libbcinfo.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libbinder.so:system/vendor/lib/arm/libbinder.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libblas.so:system/vendor/lib/arm/libblas.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcamera_client.so:system/vendor/lib/arm/libcamera_client.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcamera_metadata.so:system/vendor/lib/arm/libcamera_metadata.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcommon_time_client.so:system/vendor/lib/arm/libcommon_time_client.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcompiler_rt.so:system/vendor/lib/arm/libcompiler_rt.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcrypto.so:system/vendor/lib/arm/libcrypto.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libc.so:system/vendor/lib/arm/libc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libc++.so:system/vendor/lib/arm/libc++.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libcutils.so:system/vendor/lib/arm/libcutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libdl.so:system/vendor/lib/arm/libdl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libdrmframework.so:system/vendor/lib/arm/libdrmframework.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libeffects.so:system/vendor/lib/arm/libeffects.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libEGL.so:system/vendor/lib/arm/libEGL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libemoji.so:system/vendor/lib/arm/libemoji.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libETC1.so:system/vendor/lib/arm/libETC1.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libexpat.so:system/vendor/lib/arm/libexpat.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libFFTEm.so:system/vendor/lib/arm/libFFTEm.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libfilterfw.so:system/vendor/lib/arm/libfilterfw.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libfilterpack_imageproc.so:system/vendor/lib/arm/libfilterpack_imageproc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libft2.so:system/vendor/lib/arm/libft2.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libgabi++.so:system/vendor/lib/arm/libgabi++.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libGLES_trace.so:system/vendor/lib/arm/libGLES_trace.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libGLESv1_CM.so:system/vendor/lib/arm/libGLESv1_CM.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libGLESv2.so:system/vendor/lib/arm/libGLESv2.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libGLESv3.so:system/vendor/lib/arm/libGLESv3.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libgui.so:system/vendor/lib/arm/libgui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libhardware_legacy.so:system/vendor/lib/arm/libhardware_legacy.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libhardware.so:system/vendor/lib/arm/libhardware.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libharfbuzz_ng.so:system/vendor/lib/arm/libharfbuzz_ng.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libhwui.so:system/vendor/lib/arm/libhwui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libicui18n.so:system/vendor/lib/arm/libicui18n.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libicuuc.so:system/vendor/lib/arm/libicuuc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libimg_utils.so:system/vendor/lib/arm/libimg_utils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libinputflinger.so:system/vendor/lib/arm/libinputflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libinput.so:system/vendor/lib/arm/libinput.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libjnigraphics.so:system/vendor/lib/arm/libjnigraphics.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libjpeg.so:system/vendor/lib/arm/libjpeg.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libLLVM.so:system/vendor/lib/arm/libLLVM.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/liblog.so:system/vendor/lib/arm/liblog.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libmediandk.so:system/vendor/lib/arm/libmediandk.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libmedia.so:system/vendor/lib/arm/libmedia.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libmediautils.so:system/vendor/lib/arm/libmediautils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libmemtrack.so:system/vendor/lib/arm/libmemtrack.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libminikin.so:system/vendor/lib/arm/libminikin.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libm.so:system/vendor/lib/arm/libm.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnativebridge.so:system/vendor/lib/arm/libnativebridge.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnativehelper.so:system/vendor/lib/arm/libnativehelper.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnbaio.so:system/vendor/lib/arm/libnbaio.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnetd_client.so:system/vendor/lib/arm/libnetd_client.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnetutils.so:system/vendor/lib/arm/libnetutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnfc_ndef.so:system/vendor/lib/arm/libnfc_ndef.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libnl.so:system/vendor/lib/arm/libnl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libOpenMAXAL.so:system/vendor/lib/arm/libOpenMAXAL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libOpenSLES.so:system/vendor/lib/arm/libOpenSLES.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libopus.so:system/vendor/lib/arm/libopus.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libpcre.so:system/vendor/lib/arm/libpcre.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libpdfium.so:system/vendor/lib/arm/libpdfium.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libpixelflinger.so:system/vendor/lib/arm/libpixelflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libpng.so:system/vendor/lib/arm/libpng.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libpowermanager.so:system/vendor/lib/arm/libpowermanager.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libprocessgroup.so:system/vendor/lib/arm/libprocessgroup.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libprotobuf-cpp-lite.so:system/vendor/lib/arm/libprotobuf-cpp-lite.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libradio_metadata.so:system/vendor/lib/arm/libradio_metadata.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libradio.so:system/vendor/lib/arm/libradio.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libRScpp.so:system/vendor/lib/arm/libRScpp.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libRSCpuRef.so:system/vendor/lib/arm/libRSCpuRef.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libRSDriver.so:system/vendor/lib/arm/libRSDriver.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libRS.so:system/vendor/lib/arm/libRS.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libselinux.so:system/vendor/lib/arm/libselinux.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libserviceutility.so:system/vendor/lib/arm/libserviceutility.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsigchain.so:system/vendor/lib/arm/libsigchain.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libskia.so:system/vendor/lib/arm/libskia.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsonic.so:system/vendor/lib/arm/libsonic.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsonivox.so:system/vendor/lib/arm/libsonivox.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsoundtrigger.so:system/vendor/lib/arm/libsoundtrigger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libspeexresampler.so:system/vendor/lib/arm/libspeexresampler.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsqlite.so:system/vendor/lib/arm/libsqlite.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libssl.so:system/vendor/lib/arm/libssl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_avc_common.so:system/vendor/lib/arm/libstagefright_avc_common.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_enc_common.so:system/vendor/lib/arm/libstagefright_enc_common.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_foundation.so:system/vendor/lib/arm/libstagefright_foundation.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_http_support.so:system/vendor/lib/arm/libstagefright_http_support.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_omx.so:system/vendor/lib/arm/libstagefright_omx.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright.so:system/vendor/lib/arm/libstagefright.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstagefright_yuv.so:system/vendor/lib/arm/libstagefright_yuv.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libstdc++.so:system/vendor/lib/arm/libstdc++.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsurfaceflinger.so:system/vendor/lib/arm/libsurfaceflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsync.so:system/vendor/lib/arm/libsync.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libsysutils.so:system/vendor/lib/arm/libsysutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libui.so:system/vendor/lib/arm/libui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libunwind.so:system/vendor/lib/arm/libunwind.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libusbhost.so:system/vendor/lib/arm/libusbhost.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libutils.so:system/vendor/lib/arm/libutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libvorbisidec.so:system/vendor/lib/arm/libvorbisidec.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libwebrtc_audio_coding.so:system/vendor/lib/arm/libwebrtc_audio_coding.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libwilhelm.so:system/vendor/lib/arm/libwilhelm.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libz.so:system/vendor/lib/arm/libz.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/linker:system/vendor/lib/arm/linker \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libandroid_runtime.so:system/vendor/lib/arm/nb/libandroid_runtime.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libandroid.so:system/vendor/lib/arm/nb/libandroid.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libart.so:system/vendor/lib/arm/nb/libart.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libaudioflinger.so:system/vendor/lib/arm/nb/libaudioflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libbinder.so:system/vendor/lib/arm/nb/libbinder.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libcamera_client.so:system/vendor/lib/arm/nb/libcamera_client.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libc.so:system/vendor/lib/arm/nb/libc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libcutils.so:system/vendor/lib/arm/nb/libcutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libdl.so:system/vendor/lib/arm/nb/libdl.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libEGL.so:system/vendor/lib/arm/nb/libEGL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libft2.so:system/vendor/lib/arm/nb/libft2.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libGLESv1_CM.so:system/vendor/lib/arm/nb/libGLESv1_CM.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libGLESv2.so:system/vendor/lib/arm/nb/libGLESv2.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libGLESv3.so:system/vendor/lib/arm/nb/libGLESv3.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libgui.so:system/vendor/lib/arm/nb/libgui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libhardware_legacy.so:system/vendor/lib/arm/nb/libhardware_legacy.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libhardware.so:system/vendor/lib/arm/nb/libhardware.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libhwui.so:system/vendor/lib/arm/nb/libhwui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libicui18n.so:system/vendor/lib/arm/nb/libicui18n.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libicuuc.so:system/vendor/lib/arm/nb/libicuuc.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libjnigraphics.so:system/vendor/lib/arm/nb/libjnigraphics.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libmediandk.so:system/vendor/lib/arm/nb/libmediandk.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libmedia.so:system/vendor/lib/arm/nb/libmedia.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libm.so:system/vendor/lib/arm/nb/libm.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libnativehelper.so:system/vendor/lib/arm/nb/libnativehelper.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libOpenMAXAL.so:system/vendor/lib/arm/nb/libOpenMAXAL.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libOpenSLES.so:system/vendor/lib/arm/nb/libOpenSLES.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libpcre.so:system/vendor/lib/arm/nb/libpcre.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libpixelflinger.so:system/vendor/lib/arm/nb/libpixelflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libskia.so:system/vendor/lib/arm/nb/libskia.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libsqlite.so:system/vendor/lib/arm/nb/libsqlite.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libstagefright.so:system/vendor/lib/arm/nb/libstagefright.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libsurfaceflinger.so:system/vendor/lib/arm/nb/libsurfaceflinger.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libui.so:system/vendor/lib/arm/nb/libui.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libutils.so:system/vendor/lib/arm/nb/libutils.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/nb/libz.so:system/vendor/lib/arm/nb/libz.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfng9_img_cbk.o:system/vendor/lib/clbltfng9_img_cbk.o \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfng9_img_cbk.rtl:system/vendor/lib/clbltfng9_img_cbk.rtl \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/clbltfng9.rtl:system/vendor/lib/clbltfng9.rtl \
@@ -373,6 +375,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocclient.so:system/vendor/lib/libgrallocclient.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocgmm.so:system/vendor/lib/libgrallocgmm.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgsmgr.so:system/vendor/lib/libgsmgr.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libhoudini.so:system/vendor/lib/libhoudini.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libhwcservice.so:system/vendor/lib/libhwcservice.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdbcl.so:system/vendor/lib/libigdbcl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdfcl.so:system/vendor/lib/libigdfcl.so \
