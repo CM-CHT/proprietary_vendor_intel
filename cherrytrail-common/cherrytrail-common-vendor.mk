@@ -380,6 +380,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgsmgr.so:system/vendor/lib/libgsmgr.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libhoudini.so:system/vendor/lib/libhoudini.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libhwcservice.so:system/vendor/lib/libhwcservice.so \
+    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdbcl.so:system/vendor/lib/libigdbcl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdfcl.so:system/vendor/lib/libigdfcl.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libigdlbva.so:system/vendor/lib/libigdlbva.so \
