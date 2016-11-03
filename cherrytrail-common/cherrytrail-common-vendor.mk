@@ -165,6 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_amrenc_mdp.so:system/lib/libstagefright_soft_amrenc_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_mp3dec_mdp.so:system/lib/libstagefright_soft_mp3dec_mdp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_vorbisdec_mdp.so:system/lib/libstagefright_soft_vorbisdec_mdp.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/libstlport-mfx.so:system/lib/libstlport-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsvml.so:system/lib/libsvml.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libthermalJNI.so:system/lib/libthermalJNI.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa_custom-subsystem.so:system/lib/libtinyalsa_custom-subsystem.so \
