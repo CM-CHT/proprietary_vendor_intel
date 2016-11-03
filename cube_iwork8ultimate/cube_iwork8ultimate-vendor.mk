@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/atomisp/00ov2680.aiqb:system/etc/atomisp/00ov2680.aiqb \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/atomisp/01ov2680.aiqb:system/etc/atomisp/01ov2680.aiqb \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/camera3_profiles.xml:system/etc/camera3_profiles.xml \
-    vendor/intel/cube_iwork8ultimate/proprietary/etc/firmware/bt/rtl8723b_fw:system/etc/firmware/bt/rtl8723b_fw \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/parameter-framework/AudioParameterFramework.xml:system/etc/parameter-framework/AudioParameterFramework.xml \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/parameter-framework/Settings/Audio/AudioConfigurableDomains.xml:system/etc/parameter-framework/Settings/Audio/AudioConfigurableDomains.xml \
     vendor/intel/cube_iwork8ultimate/proprietary/etc/parameter-framework/Settings/Route/RouteConfigurableDomains.xml:system/etc/parameter-framework/Settings/Route/RouteConfigurableDomains.xml \

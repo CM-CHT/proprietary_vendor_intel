@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/chuwi_vi10plus/proprietary/etc/atomisp/00ov2680b.cht_hr.aiqb:system/etc/atomisp/00ov2680b.cht_hr.aiqb \
     vendor/intel/chuwi_vi10plus/proprietary/etc/atomisp/01ov2680.aiqb:system/etc/atomisp/01ov2680.aiqb \
     vendor/intel/chuwi_vi10plus/proprietary/etc/camera3_profiles.xml:system/etc/camera3_profiles.xml \
-    vendor/intel/chuwi_vi10plus/proprietary/etc/firmware/bt/rtl8723b_fw:system/etc/firmware/bt/rtl8723b_fw \
     vendor/intel/chuwi_vi10plus/proprietary/etc/parameter-framework/AudioParameterFramework.xml:system/etc/parameter-framework/AudioParameterFramework.xml \
     vendor/intel/chuwi_vi10plus/proprietary/etc/parameter-framework/Settings/Audio/AudioConfigurableDomains.xml:system/etc/parameter-framework/Settings/Audio/AudioConfigurableDomains.xml \
     vendor/intel/chuwi_vi10plus/proprietary/etc/parameter-framework/Settings/Route/RouteConfigurableDomains.xml:system/etc/parameter-framework/Settings/Route/RouteConfigurableDomains.xml \
