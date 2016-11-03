@@ -187,9 +187,11 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/intel_prop:system/vendor/bin/intel_prop \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/msync:system/vendor/bin/msync \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/power_hal_helper:system/vendor/bin/power_hal_helper \
+    vendor/intel/cherrytrail-common/proprietary/vendor/bin/pstore-clean:system/vendor/bin/pstore-clean \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/binfmt_misc/arm_dyn:system/vendor/etc/binfmt_misc/arm_dyn \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/binfmt_misc/arm_exe:system/vendor/etc/binfmt_misc/arm_exe \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/intel_prop.cfg:system/vendor/etc/intel_prop.cfg \
+    vendor/intel/cherrytrail-common/proprietary/vendor/etc/pstore-clean.conf:system/vendor/etc/pstore-clean.conf \
     vendor/intel/cherrytrail-common/proprietary/vendor/firmware/i915/huc_gen8.bin:system/vendor/firmware/i915/huc_gen8.bin \
     vendor/intel/cherrytrail-common/proprietary/vendor/intel/silent_lake/UUID.db:system/vendor/intel/silent_lake/UUID.db \
     vendor/intel/cherrytrail-common/proprietary/vendor/Khronos/OpenCL/vendors/Intel.icd:system/vendor/Khronos/OpenCL/vendors/Intel.icd \
