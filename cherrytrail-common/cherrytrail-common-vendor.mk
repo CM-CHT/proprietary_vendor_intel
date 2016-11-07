@@ -104,7 +104,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libdrm_intel.so:system/lib/libdrm_intel.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libdrm.so:system/lib/libdrm.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libevent-listener.so:system/lib/libevent-listener.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libfg.so:system/lib/libfg.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libfs-subsystem.so:system/lib/libfs-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgabi++-mfx.so:system/lib/libgabi++-mfx.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libgesture.so:system/lib/libgesture.so \
@@ -181,7 +180,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libwrs_omxil_core_pvwrapped.so:system/lib/libwrs_omxil_core_pvwrapped.so \
     vendor/intel/cherrytrail-common/proprietary/lib/soundfx/liblpepreprocessing.so:system/lib/soundfx/liblpepreprocessing.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/coreu:system/vendor/bin/coreu \
-    vendor/intel/cherrytrail-common/proprietary/vendor/bin/fg_algo_iface:system/vendor/bin/fg_algo_iface \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/gfxd:system/vendor/bin/gfxd \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/hdcpd:system/vendor/bin/hdcpd \
     vendor/intel/cherrytrail-common/proprietary/vendor/bin/houdini:system/vendor/bin/houdini \
@@ -373,7 +371,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcoreuservice.so:system/vendor/lib/libcoreuservice.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libcpu_device.so:system/vendor/lib/libcpu_device.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
-    vendor/intel/cherrytrail-common/proprietary/vendor/lib/libfg_ti_algo.so:system/vendor/lib/libfg_ti_algo.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgnustl_shared.so:system/vendor/lib/libgnustl_shared.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocclient.so:system/vendor/lib/libgrallocclient.so \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/libgrallocgmm.so:system/vendor/lib/libgrallocgmm.so \
