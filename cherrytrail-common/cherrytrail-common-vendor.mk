@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/bin/keymaster_meid:system/bin/keymaster_meid \
     vendor/intel/cherrytrail-common/proprietary/bin/otpserver:system/bin/otpserver \
     vendor/intel/cherrytrail-common/proprietary/bin/sensorhubd:system/bin/sensorhubd \
-    vendor/intel/cherrytrail-common/proprietary/bin/sl_si_service:system/bin/sl_si_service \
     vendor/intel/cherrytrail-common/proprietary/etc/camera_profiles.xml:system/etc/camera_profiles.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/bt/rtl8723b_config:system/etc/firmware/bt/rtl8723b_config \
     vendor/intel/cherrytrail-common/proprietary/etc/firmware/bt/rtl8723b_fw:system/etc/firmware/bt/rtl8723b_fw \
@@ -146,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libpower-subsystem.so:system/lib/libpower-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libproperty.so:system/lib/libproperty.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libproperty-subsystem.so:system/lib/libproperty-subsystem.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libproxyta.so:system/lib/libproxyta.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libremoteparameter-subsystem.so:system/lib/libremoteparameter-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libremote-processor.so:system/lib/libremote-processor.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libroute-subsystem.so:system/lib/libroute-subsystem.so \
@@ -154,9 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libsecurityclient.so:system/lib/libsecurityclient.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libsepipt.so:system/lib/libsepipt.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libsgx_urts.so:system/lib/libsgx_urts.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libsl_pm_interface.so:system/lib/libsl_pm_interface.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libsl.so:system/lib/libsl.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libstagefright_soft_aacdec_mdp.so:system/lib/libstagefright_soft_aacdec_mdp.so \
@@ -171,7 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinyalsa-subsystem.so:system/lib/libtinyalsa-subsystem.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libtinycompress.so:system/lib/libtinycompress.so \
-    vendor/intel/cherrytrail-common/proprietary/lib/libusl.so:system/lib/libusl.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-android.so:system/lib/libva-android.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva.so:system/lib/libva.so \
     vendor/intel/cherrytrail-common/proprietary/lib/libva-tpi.so:system/lib/libva-tpi.so \
@@ -191,7 +185,6 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/intel_prop.cfg:system/vendor/etc/intel_prop.cfg \
     vendor/intel/cherrytrail-common/proprietary/vendor/etc/pstore-clean.conf:system/vendor/etc/pstore-clean.conf \
     vendor/intel/cherrytrail-common/proprietary/vendor/firmware/i915/huc_gen8.bin:system/vendor/firmware/i915/huc_gen8.bin \
-    vendor/intel/cherrytrail-common/proprietary/vendor/intel/silent_lake/UUID.db:system/vendor/intel/silent_lake/UUID.db \
     vendor/intel/cherrytrail-common/proprietary/vendor/Khronos/OpenCL/vendors/Intel.icd:system/vendor/Khronos/OpenCL/vendors/Intel.icd \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/cpuinfo:system/vendor/lib/arm/cpuinfo \
     vendor/intel/cherrytrail-common/proprietary/vendor/lib/arm/libandroidfw.so:system/vendor/lib/arm/libandroidfw.so \
