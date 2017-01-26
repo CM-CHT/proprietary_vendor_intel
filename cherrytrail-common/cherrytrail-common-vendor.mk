@@ -85,6 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/intel/cherrytrail-common/proprietary/etc/video_isv_profile.xml:system/etc/video_isv_profile.xml \
     vendor/intel/cherrytrail-common/proprietary/etc/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
     vendor/intel/cherrytrail-common/proprietary/lib/audio.routemanager.so:system/lib/audio.routemanager.so \
+    vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.codec_offload.cherrytrail.so:system/lib/hw/audio.codec_offload.cherrytrail.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.hdmi.gmin.so:system/lib/hw/audio.hdmi.gmin.so \
     vendor/intel/cherrytrail-common/proprietary/lib/hw/audio.primary.gmin.so:system/lib/hw/audio.primary.gmin.so \
